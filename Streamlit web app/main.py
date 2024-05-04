@@ -42,7 +42,7 @@ def main():
     }}
     </style>
     """
-    st.set_page_config(page_title="Web AI cho Phân Tích Chiến Thuật Trong Bóng Đá", layout="wide", initial_sidebar_state="expanded")
+    st.set_page_config(page_title="Web AI Phân Tích Bóng Đá", layout="wide", initial_sidebar_state="expanded")
     # st.markdown(page_bg_img, unsafe_allow_html=True)
 
     st.title("Nhận diện Cầu thủ Bóng đá với Dự đoán Đội & Bản đồ Chiến thuật")
@@ -71,7 +71,7 @@ def main():
         
         t2col1, t2col2 = st.columns([1,1])
         with t2col1:
-            demo_selected = st.radio(label="Chọn Video Demo", options=["Demo 1 (France vs Switzerland)", "Demo 2 (Chelsea vs ManCity)"], horizontal=True)
+            demo_selected = st.radio(label="Chọn Video Demo có sẵn", options=["Demo 1 (France vs Switzerland)", "Demo 2 (Chelsea vs ManCity)"], horizontal=True)
             # st.subheader("Tải lên Video")
             st.write('\n')
             st.write('\n')
@@ -167,7 +167,7 @@ def main():
             value = streamlit_image_coordinates(concat_det_imgs, key="numpy")
             #value_radio_dic = defaultdict(lambda: None)
             st.markdown('---')
-            radio_options =[f"{team1_name} Player color", f"{team1_name} GK color",f"{team2_name} P color", f"{team2_name} GK color"]
+            radio_options =[f"{team1_name} Player color", f"{team1_name} GK color",f"{team2_name} Player color", f"{team2_name} GK color"]
             active_color = st.radio(label="Chọn màu đội mà bạn muốn từ ảnh ở trên", options=radio_options, horizontal=True,
                                     help="Chọn màu đội mà bạn muốn chọn và nhấp vào ảnh ở trên để chọn màu. Các màu sẽ được hiển thị trong các hộp dưới đây.")
             if value is not None:
@@ -178,7 +178,7 @@ def main():
             with cp1:
                 hex_color_1 = st.session_state[f"{team1_name} Player color"] if f"{team1_name} Player color" in st.session_state else selected_team_info["team1_p_color"]
                 team1_p_color = st.color_picker(label=' ', value=hex_color_1, key='t1p')
-                st.session_state[f"{team1_name} P color"] = team1_p_color
+                st.session_state[f"{team1_name} Player color"] = team1_p_color
             with cp2:
                 hex_color_2 = st.session_state[f"{team1_name} GK color"] if f"{team1_name} GK color" in st.session_state else selected_team_info["team1_gk_color"]
                 team1_gk_color = st.color_picker(label=' ', value=hex_color_2, key='t1gk')
@@ -186,7 +186,7 @@ def main():
             with cp3:
                 hex_color_3 = st.session_state[f"{team2_name} Player color"] if f"{team2_name} Player color" in st.session_state else selected_team_info["team2_p_color"]
                 team2_p_color = st.color_picker(label=' ', value=hex_color_3, key='t2p')
-                st.session_state[f"{team2_name} P color"] = team2_p_color
+                st.session_state[f"{team2_name} Player color"] = team2_p_color
             with cp4:
                 hex_color_4 = st.session_state[f"{team2_name} GK color"] if f"{team2_name} GK color" in st.session_state else selected_team_info["team2_gk_color"]
                 team2_gk_color = st.color_picker(label=' ', value=hex_color_4, key='t2gk')
@@ -202,8 +202,8 @@ def main():
             extracted_frame.image(frame, use_column_width=True, channels="BGR")
 
         
-        colors_dic, color_list_lab = create_colors_info(team1_name, st.session_state[f"{team1_name} P color"], st.session_state[f"{team1_name} GK color"],
-                                                     team2_name, st.session_state[f"{team2_name} P color"], st.session_state[f"{team2_name} GK color"])
+        colors_dic, color_list_lab = create_colors_info(team1_name, st.session_state[f"{team1_name} Player color"], st.session_state[f"{team1_name} GK color"],
+                                                     team2_name, st.session_state[f"{team2_name} Player color"], st.session_state[f"{team2_name} GK color"])
 
     # with tab2:
 
