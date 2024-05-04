@@ -19,9 +19,9 @@ def main():
     page_bg_img = f"""
     <style>
     [data-testid="stAppViewContainer"] > .main {{
-    background-image: url("https://wallpapers.com/images/hd/football-stadium-and-a-white-ball-6cyrflm18fg1rum6.jpg");
-    background-size: 180%;
-    background-position: top left;
+    background-image: url("https://img.freepik.com/free-photo/happy-birthday-soccer-themed_23-2149695896.jpg?t=st=1714831432~exp=1714835032~hmac=777a583b35362058c5e0f95855129eb2bb30ced0ef393a2b8a1e128e52fd896b&w=826");
+    background-size: 100%;
+    # background-position: top left;
     background-repeat: no-repeat;
     background-attachment: local;
     }}
@@ -64,8 +64,18 @@ def main():
 
     
     ## Thiết lập Trang
-    tab1, tab2, tab3 = st.tabs(["Tải lên video", "Tùy chỉnh Tham Số và Nhận diện", "Thông tin cơ bản của web"])
+    tab1, tab2, tab3 = st.tabs(["Tải lên video", "Tùy chỉnh Tham Số và Nhận diện", "Thông tin nhóm và web"])
     with tab1:
+        st.subheader('Cách Sử Dụng?', divider='blue')
+        st.markdown("""
+                    1. Tải lên một video để phân tích, sử dụng nút "Browse Files" bên dưới.
+                    2. Nhập tên đội tương ứng với video đã tải lên vào các trường văn bản.
+                    3. Chọn một khung hình (thứ tự của frame) mà ở đó cầu thủ và thủ môn từ cả hai đội có thể được nhận diện.
+                    4. Chọn màu của cầu thủ và thủ môn của mỗi đội tương ứng với khung nhận diện ở trên mà bạn cho là phù hợp nhất (bạn có thể tùy chình lại màu đội ở các ô bên dưới nếu chưa hài lòng).
+                    5. Chuyển đến tab "Tùy chỉnh Tham Số và Nhận diện", điều chỉnh các tham số và chọn các tùy chọn chú thích. (Tham số mặc định được đề xuất)
+                    6. Chạy Phát hiện!
+                    7. Nếu chọn tùy chọn "Lưu kết quả", video đã lưu có thể được tìm thấy trong thư mục "outputs"
+                    """)
         st.subheader(":red[Chỉ hoạt động với các video từ Camera Chiến thuật]")
         st.write('\n')
         
@@ -324,17 +334,6 @@ def main():
                     2. Dự đoán đội cầu thủ.
                     3. Ước tính vị trí của cầu thủ và quả bóng trên bản đồ chiến thuật.
                     4. Theo dõi quả bóng.
-                    """)
-        st.subheader('Cách Sử Dụng?', divider='blue')
-        st.markdown("""
-                    1. Tải lên một video để phân tích, sử dụng nút "Browse Files" trong menu bên.
-                    2. Nhập tên đội tương ứng với video đã tải lên vào các trường văn bản trong menu bên.
-                    3. Truy cập tab "Màu Đội" trên trang chính.
-                    4. Chọn một khung hình trong đó cầu thủ và thủ môn từ cả hai đội có thể được nhận diện.
-                    5. Làm theo hướng dẫn trên trang để chọn màu của mỗi đội.
-                    6. Chuyển đến tab "Tùy chỉnh Tham Số và Nhận diện", điều chỉnh các tham số và chọn các tùy chọn chú thích. (Tham số mặc định được đề xuất)
-                    7. Chạy Phát hiện!
-                    8. Nếu chọn tùy chọn "Lưu kết quả", video đã lưu có thể được tìm thấy trong thư mục "outputs"
                     """)
 
 
