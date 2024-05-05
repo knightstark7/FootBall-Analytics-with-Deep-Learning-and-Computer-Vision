@@ -1,8 +1,8 @@
 
 # Web Phân Tích Bóng Đá Sử Dụng Học Sâu Và Thị Giác Máy Tính
 
+## Đại học Khoa học tự nhiên - ĐHQG. TPHCM
 ## Đồ án cuối kì - Nhập môn học máy - 21KHDL1
-## VNU - HCMUS
 
 ## Thông tin nhóm
 | Name              | ID       |
