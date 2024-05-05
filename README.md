@@ -1,5 +1,5 @@
 
-# Football Analytics Web with Deep Learning and Computer Vision
+# Web Phân Tích Bóng Đá Sử Dụng Học Sâu Và Thị Giác Máy Tính
 
 ## Đồ án cuối kì - Nhập môn học máy - 21KHDL1
 ## VNU - HCMUS
@@ -17,6 +17,12 @@ Tạo ra một ứng dụng web phân tích bóng đá tự động, và cung c�
 
 ## Tiến độ của dự án:
 Tận dụng streamlit để phát triển ứng dụng web cho phát hiện cầu thủ, thủ môn mỗi đội, trọng tài, theo dõi quả bóng, và trực quan bằng bản đồ chiến thuật.
+
+## Các chức năng chính
+1. Nhận diện cầu thủ, trọng tài và bóng.
+2. Dự đoán đội cầu thủ.
+3. Ước tính vị trí của cầu thủ và quả bóng trên bản đồ chiến thuật.
+4. Theo dõi quả bóng.
 
 ## Cách sử dụng
 Mô tả các bước:
