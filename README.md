@@ -1,10 +1,10 @@
 
-# Web Phân Tích Bóng Đá Sử Dụng Học Sâu Và Thị Giác Máy Tính
+# Football Analysis Web Application Using Deep Learning and Computer Vision
 
-## Đại học Khoa học tự nhiên - ĐHQG. TPHCM
-## Đồ án cuối kì - Nhập môn học máy - 21KHDL1
+## University of Science - VNUHCM
+## Final Project - Introduction to Machine Learning - 21KHDL1
 
-## Thông tin nhóm
+## Team Information
 | Name              | ID       |
 |-------------------|----------|
 | Trần Nguyên Huân  | 21127050 |
@@ -12,29 +12,29 @@
 | Nguyễn Minh Quân   | 21127143 |
 | Nguyễn Phát Đạt   | 21127240 |
 
-## Mục tiêu của đồ án
-Tạo ra một ứng dụng web phân tích bóng đá tự động, và cung cấp thông tin hữu ích giúp đưa ra quyết định trong phân tích chiến lược.
+## Project Objective
+Develop an automated football analysis web application that provides useful insights to aid in strategic decision-making.
 
-## Tiến độ của dự án:
-Tận dụng streamlit để phát triển ứng dụng web cho phát hiện cầu thủ, thủ môn mỗi đội, trọng tài, theo dõi quả bóng, và trực quan bằng bản đồ chiến thuật.
+## Project Progress
+Utilizing Streamlit to develop a web application for player detection, tracking goalkeepers, referees, the ball, and visualizing data through a tactical map.
 
-## Các chức năng chính
-1. Nhận diện cầu thủ, trọng tài và bóng.
-2. Dự đoán đội cầu thủ.
-3. Ước tính vị trí của cầu thủ và quả bóng trên bản đồ chiến thuật.
-4. Theo dõi quả bóng.
+## Key Features
+1. Detect players, referees, and the ball.
+2. Predict the teams of the players.
+3. Estimate the positions of players and the ball on a tactical map.
+4. Track the ball.
 
-## Cách sử dụng
-Mô tả các bước:
-1. Tải lên một video để phân tích, sử dụng nút `Browse Files` bên dưới.
-2. Nhập tên đội tương ứng với video đã tải lên vào các trường văn bản.
-3. Chọn một khung hình (thứ tự của frame) mà ở đó cầu thủ và thủ môn từ cả hai đội có thể được nhận diện.
-4. Chọn màu của cầu thủ và thủ môn của mỗi đội tương ứng với khung nhận diện ở trên mà bạn cho là phù hợp nhất (bạn có thể tùy chình lại màu đội ở các ô bên dưới nếu chưa hài lòng).
-5. Chuyển đến tab `Tùy chỉnh Tham Số và Nhận diện`, điều chỉnh các tham số và chọn các tùy chọn chú thích. (Tham số mặc định được đề xuất)
-6. Chạy Phát hiện!
-7. Nếu chọn tùy chọn `Lưu kết quả`, video đã lưu có thể được tìm thấy trong thư mục `outputs`
+## Usage Instructions
+Steps to use the application:
+1. Upload a video for analysis using the `Browse Files` button below.
+2. Enter the names of the teams corresponding to the uploaded video in the text fields.
+3. Select a frame where players and goalkeepers from both teams can be identified.
+4. Choose the colors of the players and goalkeepers for each team corresponding to the selected frame (you can adjust the team colors in the fields below if not satisfied).
+5. Go to the `Tùy chỉnh Tham Số và Nhận diện` tab, adjust the parameters, and choose annotation options. (Default parameters are recommended)
+6. Run Detection!
+7. If you select the `Lưu kết quả` option, the saved video can be found in the `outputs` folder.
 
-## Flow Chart của dự án
-Hành trình từ lúc tải lên video đầu vào và các chức năng khác nhau được minh họa trong sơ đồ quy trình (`Flow Chart`) bên dưới.
+##  Flow Chart
+The process from uploading the input video to the various functionalities is illustrated in the flow chart below.
 
-![Flow Chart](https://raw.githubusercontent.com/knightstark7/FootBall-Analytics-with-Deep-Learning-and-Computer-Vision/main/Flow%20Chart.png?token=GHSAT0AAAAAACRBG4ZFVO7PT4YOFJF4KMOAZRXF4WA)
+![Flow Chart](https://github.com/knightstark7/FootBall-Analytics-with-Deep-Learning-and-Computer-Vision/blob/main/FlowChart.png)
