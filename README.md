@@ -15,6 +15,8 @@
 ## Project Objective
 Develop an automated football analysis web application that provides useful insights to aid in strategic decision-making.
 
+![Output](https://github.com/knightstark7/FootBall-Analytics-with-Deep-Learning-and-Computer-Vision/blob/main/output.png)
+
 ## Project Progress
 Utilizing Streamlit to develop a web application for player detection, tracking goalkeepers, referees, the ball, and visualizing data through a tactical map.
 
